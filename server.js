@@ -1,12 +1,3 @@
-  // Initialize SuperLogin 
-var superlogin = new SuperLogin(config);
-
-// Mount SuperLogin's routes to our app 
-app.use('/auth', superlogin.router);
-
-app.listen(process.env.PORT || 8080);
-
-
 var express = require('express');
 var https = require('https');
 var bodyParser = require('body-parser');
