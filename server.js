@@ -28,3 +28,11 @@ var config = {
       local: true
     }
   };
+
+  // Initialize SuperLogin 
+var superlogin = new SuperLogin(config);
+
+// Mount SuperLogin's routes to our app 
+app.use('/auth', superlogin.router);
+
+app.listen(process.env.PORT || 8080);
